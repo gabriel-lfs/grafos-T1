@@ -143,3 +143,8 @@ cython_debug/
 # InteliJ IDEs items
 
 .idea/
+
+# Project items
+report_*
+adjacency_*
+dfs_*

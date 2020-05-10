@@ -1,0 +1,4 @@
+-i https://pypi.org/simple
+
+hurry==1.1
+psutil==5.7.0
