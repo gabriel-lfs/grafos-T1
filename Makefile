@@ -14,3 +14,10 @@ release:
 		&& git tag "$$INPUT_VERSION" \
 		&& git push origin "$$INPUT_VERSION" \
 		&& git push origin -u "$(shell git rev-parse --abbrev-ref HEAD)"
+
+run:
+	@python3 -m pip install pipenv
+	@pipenv install --three --system \
+	&& export PYTHONPATH=`pwd` \
+	&& clear \
+	&& python3 $$PYTHONPATH/src/main.py
