@@ -1,3 +1,7 @@
+"""
+Gabriel Luís Fernando de Souza
+"""
+
 from src.second_question import COLOR
 
 

@@ -1,3 +1,7 @@
+"""
+Gabriel Luís Fernando de Souza
+"""
+
 from collections import OrderedDict, deque
 from datetime import datetime
 from queue import Queue
@@ -114,6 +118,7 @@ class Graph:
                     f'nível: {vertex.level} pai: {vertex.parent} '
                     f'tempo de descoberta: {vertex.discovery_time}\n'
                 )
+        print(f'\n\narquivo {filename} criado.')
 
     def __bfs(self, search_queue):
         while not search_queue.empty():
